@@ -1,9 +1,9 @@
-import plans_bg from "../assets/training-main2.jpg";
-import breathing from "../assets/breathing-training.jpg";
-import stretching from "../assets/stretching-training.jpg";
-import endurance from "../assets/endurance-training.jpg";
-import speed from "../assets/speed-training.jpg";
-import diving from "../assets/diving-training.jpg";
+import plans_bg from "../assets/training-main2.webp";
+import breathing from "../assets/breathing-training.webp";
+import stretching from "../assets/stretching-training.webp";
+import endurance from "../assets/endurance-training.webp";
+import speed from "../assets/speed-training.webp";
+import diving from "../assets/diving-training.webp";
 import { useState } from "react";
 import { Link } from "react-scroll"
 
@@ -57,7 +57,7 @@ export default function Plans() {
                   <a href='#plans'>
                   <div key={plan.id} className="bg-white  border border-neutral-200 rounded-md drop-shadow-md flex flex-col ">
                     <div>
-                      <img className="w-full h-64" src={plan.image}></img>
+                      <img className="w-full h-64" loading="lazy"src={plan.image}></img>
                     </div>
                     <div className="p-5">
                     <h2 className="text-2xl font-bold">{plan.title}</h2>

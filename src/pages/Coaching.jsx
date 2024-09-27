@@ -1,4 +1,3 @@
-import coaching_main from "../assets/coaching-main.jpg";
 import jane_doe from "../assets/jane-doe.webp";
 import james_brown from "../assets/james-brown.webp";
 import hannah_jones from "../assets/hannah-jones.webp";
@@ -28,7 +27,7 @@ export default function Coaching() {
                 {coaches.map(coach => (
                   <div key={coach.id} className=" flex flex-col w-80">
                     <div>
-                      <img className="w-80 h-80" src={coach.image}></img>
+                      <img className="w-80 h-80" loading="lazy"src={coach.image}></img>
                     </div>
                     <div className="flex flex-col flex-1 pt-2">
                       <h2 className="text-2xl font-bold">{coach.name}</h2>
