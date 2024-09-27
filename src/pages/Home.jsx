@@ -1,4 +1,4 @@
-import homepage_bg from "../assets/homepage-background-swimmer.webp";
+import homepage_bg from "../assets/homepage-background-swimmer.jpg";
 
 export default function Home() {
   return (
