@@ -15,7 +15,7 @@ export default function Coaching() {
   ];
   return (
     <>
-    <section className='flex items-center justify-center mt-20'>
+    <section className='flex items-center justify-center mt-10'>
      
       <div className="flex flex-col items-center pr-2 pl-2">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl mb-5">Meet our coaches</h1>

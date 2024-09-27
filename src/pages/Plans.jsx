@@ -41,7 +41,7 @@ export default function Plans() {
           </Link>
         </div>
         </section>
-        <section className="flex flex-col justify-center min-h-screen lg:min-h-screen items-center container mx-auto mb-10 mt-10 " id="plans">
+        <section className="flex flex-col  min-h-screen lg:min-h-screen items-center container mx-auto mb-10 mt-10 " id="plans">
           <div>
             <div className="mb-10">
               <label htmlFor="level" id="level" className="mr-5">Choose Level</label>
