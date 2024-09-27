@@ -5,6 +5,7 @@ import endurance from "../assets/endurance-training.jpg";
 import speed from "../assets/speed-training.jpg";
 import diving from "../assets/diving-training.jpg";
 import { useState } from "react";
+import { Link } from "react-scroll"
 
 export default function Plans() {
 
@@ -22,7 +23,7 @@ export default function Plans() {
   ];
   
   const [selectedLevel, setSelectedLevel] = useState("All")
-  const [selectedSkill, setSelectedSkill] = useState("Skill")
+  // const [selectedSkill, setSelectedSkill] = useState("Skill")
   const filterByLevel = selectedLevel === 'All' ? trainingPlans : trainingPlans.filter(plan => plan.level === selectedLevel)
   const levelChange = (e) => {setSelectedLevel(e.target.value)}
   return (
@@ -35,10 +36,12 @@ export default function Plans() {
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold drop-shadow-2xl ">
             Train like a pro
           </h1>
-          <svg className="h-10 sm:h-12 md:h-14 lg:h-20"fill="#ffffff" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z"></path> <path d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17 l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17 C369.42,189.917,355.913,189.917,347.582,198.248z"></path> </g> </g> </g> </g></svg>
+          <Link to="plans" smooth={true} duration={500} offset={-96} role="button" aria-label="Scroll to training plans">
+          <svg className="h-10 sm:h-12 md:h-14 lg:h-20 cursor-pointer hover:fill-primary"fill="#ffffff" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z"></path> <path d="M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17 l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17 C369.42,189.917,355.913,189.917,347.582,198.248z"></path> </g> </g> </g> </g></svg>
+          </Link>
         </div>
         </section>
-        <section className="flex flex-col justify-center min-h-screen lg:min-h-screen items-center container mx-auto mb-10 mt-10 ">
+        <section className="flex flex-col justify-center min-h-screen lg:min-h-screen items-center container mx-auto mb-10 mt-10 " id="plans">
           <div>
             <div className="mb-10">
               <label htmlFor="level" id="level" className="mr-5">Choose Level</label>
@@ -51,6 +54,7 @@ export default function Plans() {
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-xs md:max-w-full ">
                 {filterByLevel.map(plan => (
+                  <a href='#plans'>
                   <div key={plan.id} className="bg-white  border border-neutral-200 rounded-md drop-shadow-md flex flex-col ">
                     <div>
                       <img className="w-full h-64" src={plan.image}></img>
@@ -62,6 +66,7 @@ export default function Plans() {
                     </div>
 
                   </div>
+                  </a>
                 ))}
               </div>
           </div>
