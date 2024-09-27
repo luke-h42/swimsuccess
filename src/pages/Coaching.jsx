@@ -1,16 +1,17 @@
-import jane_doe from "../assets/jane-doe.webp";
-import james_brown from "../assets/james-brown.webp";
-import hannah_jones from "../assets/hannah-jones.webp";
-import michael_smith from "../assets/michael-smith.webp";
+import jane_doe from "../assets/jane-doe.jpg";
+import james_brown from "../assets/james-brown.jpg";
+import hannah_jones from "../assets/hannah-jones.jpg";
+import michael_smith from "../assets/michael-smith.jpg";
 
 
 export default function Coaching() {
 
   const coaches = [
-    {id:1, name: 'Jane Doe', job: 'Swimming Coach', image: jane_doe, description: 'Jane specialises in endurance swimming and has over 10 years of open water swimming experience alongside 5 years of coaching.', email:'janedoe@swimsuccess.com'},
-    {id:2, name: 'James Brown', job: 'Swimming Coach', image: james_brown, description: 'James swam competitively for 6 years before moving to coaching. He now shares his award winning technique as he focuses on swimming as well as land training.', email:'jamesbrown@swimsuccess.com'},
-    {id:3, name: 'Hannah Jones', job: 'Swimming Coach', image: hannah_jones, description: 'Hannah is passionate about teaching beginners and emphasise on being streamline, breathing technique and stretching.', email:'hannahjones@swimsuccess.com'},
-    {id:4, name: 'Michael Smith', job: 'Lifeguard Instructor', image: michael_smith, description: 'Michael has been lifeguarding for 8 years and is very experienced at both indoor and outdoor lifeguarding. Michael teaches essential water safety to prevent accidents.', email:'michaelsmith@swimsuccess.com'},
+    {id:1, name: 'James Brown', job: 'Swimming Coach', image: james_brown, description: 'James swam competitively for 6 years before moving to coaching. He now shares his award winning technique as he focuses on swimming as well as land training.', email:'jamesbrown@swimsuccess.com'},
+    {id:2, name: 'Jane Doe', job: 'Swimming Coach', image: jane_doe, description: 'Jane specialises in endurance swimming and has over 10 years of open water swimming experience alongside 5 years of coaching.', email:'janedoe@swimsuccess.com'},
+    
+    {id:3, name: 'Hannah Jones', job: 'Lifeguard Instructor', image: hannah_jones, description: 'Hannah teaches essential water safety to prevent accidents. Hannah has been lifeguarding for 8 years and is very experienced at both indoor and outdoor lifeguarding.', email:'hannahjones@swimsuccess.com'},
+    {id:4, name: 'Michael Smith', job: 'Swimming Coach', image: michael_smith, description: 'Michael is passionate about teaching beginners and emphasise on being streamline, breathing technique and stretching. ', email:'michaelsmith@swimsuccess.com'},
    
   ];
   return (

@@ -1,4 +1,4 @@
-import plans_bg from "../assets/training-main2.jpg";
+import plans_bg from "../assets/training-main2.webp";
 import breathing from "../assets/breathing-training.webp";
 import stretching from "../assets/stretching-training.webp";
 import endurance from "../assets/endurance-training.webp";
