@@ -6,6 +6,7 @@ import Plans from './pages/Plans'
 import Coaching from './pages/Coaching'
 import Join from './pages/Join'
 import Login from './pages/Login'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/join-us' element={<Join />} />
     </Routes>
+    <Footer/>
     </>
   )
 }

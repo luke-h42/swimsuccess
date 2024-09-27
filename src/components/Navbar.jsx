@@ -12,7 +12,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="bg-primary sticky top-0 z-10 text-white h-14 md:flex">
+    <nav className=" bg-white sticky top-0 z-10 text-white h-14 md:flex">
       <div className='md:flex bg-primary md:justify-between md:w-full md:px-8 lg:px-16'>
         <div className='py-2 flex items-center justify-between container mx-auto px-6  '>
           <div className='w-24'>
