@@ -1,4 +1,5 @@
 import homepage_bg from "../assets/homepage-background-swimmer.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
             Our training plans are developed by professional coaches and
             swimmers to help streamline your swimming progress!
           </p>
-          <a href='/training-plans'>
+          <Link to='/training-plans'>
           <button  className="bg-primary text-white py-2 px-4 rounded-lg w-36 md:w-36 border border-white hover:bg-primary700">
             Train Now
           </button>
-          </a>
+          </Link>
         </div>
       </section>
       <section className="flex flex-col justify-center min-h-screen lg:h-screen items-center container mx-auto md:max-w-screen-lg  lg:max-w-screen-xl mb-10">
@@ -37,21 +38,21 @@ export default function Home() {
               Choose between workout plans that focus on different elements of
               swimming: Technique, endurance or speed.
             </p>
-            <a href='/training-plans'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Train Now</button></a>
+            <Link to='/training-plans'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Train Now</button></Link>
           </div>
           <div className="bg-primary100 p-5 border border-neutral-200 rounded-md drop-shadow-md flex flex-col ">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Progress Tracking</h2>
             <p className="text-lg md:text-xl flex-1 mb-3">
             Keep track of how hard you’ve been working towards your goals by logging your workouts.
             </p>
-            <a href='/login'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Login</button></a>
+            <Link to='/login'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Login</button></Link>
           </div>
           <div className="bg-primary100 p-5 border border-neutral-200 rounded-md drop-shadow-md flex flex-col ">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Coaching</h2>
             <p className="text-lg md:text-xl flex-1 mb-3">
             Get in touch with one of our swimming professionals to help customise your journey and keep you motivated.
             </p>
-            <a href='/coaching'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Contact Coaches</button></a>
+            <Link to='/coaching'><button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">Contact Coaches</button></Link>
           </div>
           
         </div>
