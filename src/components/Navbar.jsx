@@ -48,11 +48,11 @@ const closeNav =() => {
         </div>
         </div>
         <div className={` md:flex md:items-center ${navOpen ? 'flex flex-col' : 'hidden' }`} ref={navRef}>
-            <Link to="/" className="cursor-pointer  py-1 px-6 hover:bg-primary700 md:ml-2 navbar-openable"  onClick={closeNav}>Home</Link>
-            <Link to="/training-plans" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable"  onClick={closeNav}>Plans</Link>
-            <Link to="/coaching" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable" onClick={closeNav}>Coaching</Link>
-            <Link to="/login" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable" onClick={closeNav}>Login</Link>
-            <Link to="/join-us" className="cursor-pointer  py-1 mt-1 px-6 mb-2 hover:bg-primary700 md:mt-0 md:mb-0 whitespace-nowrap md:ml-2 navbar-openable" onClick={closeNav}>Join Us</Link>
+            <Link to="/" className="cursor-pointer  py-1 px-6 hover:bg-primary700 md:ml-2 navbar-openable active:bg-primary700"  onClick={closeNav}>Home</Link>
+            <Link to="/training-plans" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable active:bg-primary700"  onClick={closeNav}>Plans</Link>
+            <Link to="/coaching" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable active:bg-primary700" onClick={closeNav}>Coaching</Link>
+            <Link to="/login" className="cursor-pointer  py-1 mt-1 px-6 hover:bg-primary700 md:mt-0 md:ml-2 navbar-openable active:bg-primary700" onClick={closeNav}>Login</Link>
+            <Link to="/join-us" className="cursor-pointer  py-1 mt-1 px-6 mb-2 hover:bg-primary700 md:mt-0 md:mb-0 whitespace-nowrap md:ml-2 navbar-openable active:bg-primary700" onClick={closeNav}>Join Us</Link>
         </div>
       </div>
   </nav>
