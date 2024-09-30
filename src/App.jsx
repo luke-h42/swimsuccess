@@ -7,6 +7,7 @@ import Coaching from './pages/Coaching'
 import Join from './pages/Join'
 import Login from './pages/Login'
 import Footer from './components/Footer'
+import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/coaching' element={<Coaching />} />
       <Route path='/login' element={<Login />} />
       <Route path='/join-us' element={<Join />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
     <Footer/>
     </>
