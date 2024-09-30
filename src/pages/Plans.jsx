@@ -231,7 +231,7 @@ export default function Plans() {
           {showModal ? (
             <>
               <div
-                className="justify-center items-center flex overflow-x-hidden pr-4 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                 onClick={() => {
                   setShowModal(false);
                   setBooking(false);
@@ -272,7 +272,7 @@ export default function Plans() {
                         </svg>
                       </button>
                     </div>
-                    <div className="relative p-6 flex-auto">
+                    <div className="relative p-6 flex-auto overflow-y-auto max-h-[50vh]">
                       <h2 className="text-xl">{selectedPlan.level} Level</h2>
                       <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
                         {selectedPlan.training}
