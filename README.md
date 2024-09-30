@@ -1,5 +1,5 @@
 # SwimSuccess
-Live Site: SwimSuccess(https://swimsuccess.netlify.app/)
+Live Site: [SwimSuccess](https://swimsuccess.netlify.app/)
 A frontend project created with React&Vite and Tailwind
 
 Features: 
