@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import bgImageD from "../assets/homepage-background-swimmer-1920.avif";
 import bgImageM from "../assets/homepage-background-swimmer-m6.jpg";
-import bgImageT from "../assets/homepage-background-swimmer-t3.jpg";
+import bgImageT from "../assets/homepage-background-swimmer-t4.png";
 
 export default function Home() {
   return (

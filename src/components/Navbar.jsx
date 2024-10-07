@@ -39,7 +39,11 @@ export default function Navbar() {
         <div className="py-2 flex items-center justify-between container mx-auto px-6  ">
           <div className="w-24 h-8">
             <Link to="/" className="cursor-pointer " onClick={closeNav}>
-              <img className="w-24 h-8" src={swim_success_logo}></img>
+              <img
+                className="w-24 h-8"
+                src={swim_success_logo}
+                alt="Swimsuccess Logo"
+              ></img>
             </Link>
           </div>
           <div className="flex justify-center">
@@ -47,6 +51,7 @@ export default function Navbar() {
               className="block w-10 h-10 "
               type="button"
               onClick={toggleNav}
+              aria-controls="Navbar-menu"
             >
               <svg
                 className="w-full h-full text-white md:hidden"
@@ -80,6 +85,7 @@ export default function Navbar() {
           </div>
         </div>
         <div
+          id="Navbar-menu"
           className={` md:flex md:items-center ${
             navOpen ? "flex flex-col" : "hidden"
           }`}
