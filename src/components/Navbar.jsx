@@ -39,8 +39,8 @@ export default function Navbar() {
               <img src={swim_success_logo}></img>
             </Link>
           </div>
-          <div className="flex justify-center" ref={navRef}>
-            <button onClick={toggleNav}>
+          <div className="flex justify-center" onClick={toggleNav}>
+            <button ref={navRef}>
               <svg
                 className="w-10 h-10 text-white md:hidden"
                 aria-hidden="true"
