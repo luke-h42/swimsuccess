@@ -18,6 +18,7 @@ export default function Home() {
             src={bgImageD}
             alt="Swimming background"
             className="w-full h-full object-cover"
+            decoding="async"
             width={1920}
             height={1440}
           />
