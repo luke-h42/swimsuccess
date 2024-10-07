@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
+import bgImageD from "../assets/homepage-background-swimmer-d.jpg";
+import bgImageM from "../assets/homepage-background-swimmer-m2.jpg";
+import bgImageT from "../assets/homepage-background-swimmer-t.jpg";
+
 export default function Home() {
   return (
     <>
-      <section className="flex items-center min-h-[calc(100vh-56px)] w-full bg-right  bg-cover bg-no-repeat md:bg-rght bg-blend-overlay bg-black/10 bg-mobile md:bg-tablet lg:bg-desktop ">
-        <div className="flex flex-col text-white w-full px-3 lg:w-full mx-auto gap-8 ml-1 sm:ml-10 md:ml-20">
+      <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
+        <picture className="absolute inset-0  bg-right">
+          <source media="(min-width: 768px)" srcSet={bgImageD} />
+          <source media="(min-width: 641px)" srcSet={bgImageT} />
+          <source media="(max-width: 640px)" srcSet={bgImageM} />
+          <img
+            src="path-to-default-image.jpg" // fallback image for browsers that don't support picture element
+            alt="Swimming background"
+            className="w-full h-full object-cover"
+          />
+        </picture>
+        <div className="relative z-10 flex flex-col text-white w-full px-3 lg:w-full mx-auto gap-8 ml-1 sm:ml-10 md:ml-20">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold drop-shadow-2xl mb-[35vh] md:mb-[25vh] lg:mb-[30vh] xl:mb-[33vh]">
             Want to swim,
             <br />
@@ -20,20 +34,21 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="flex flex-col justify-center min-h-screen lg:h-screen items-center container mx-auto md:max-w-screen-lg  lg:max-w-screen-xl mb-10">
+
+      <section className="flex flex-col justify-center min-h-screen lg:h-screen items-center container mx-auto md:max-w-screen-lg lg:max-w-screen-xl mb-10">
         <div className="mb-10 md:mb-20 mt-8">
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold ">
             Why train with us
           </h1>
         </div>
-        <div className=" grid gap-4  lg:grid-cols-3 max-w-xs sm:max-w-md lg:max-w-full">
+        <div className="grid gap-4 lg:grid-cols-3 max-w-xs sm:max-w-md lg:max-w-full">
           <div className="bg-primary100 p-5 border border-neutral-200 rounded-md drop-shadow-md flex flex-col ">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">
               Varied Workouts
             </h2>
             <p className="text-lg md:text-xl flex-1 mb-3">
               Choose between workout plans that focus on different elements of
-              swimming:Technique,endurance or speed.
+              swimming: Technique, endurance or speed.
             </p>
             <Link to="/training-plans">
               <button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">
@@ -59,7 +74,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Coaching</h2>
             <p className="text-lg md:text-xl flex-1 mb-3">
               Get in touch with one of our swimming professionals to help
-              customise your journey and keep you motivated.
+              customize your journey and keep you motivated.
             </p>
             <Link to="/coaching">
               <button className="bg-primary text-white py-2 rounded-lg w-36 md:w-36 hover:bg-primary700">
