@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
-import bgImageD from "../assets/homepage-background-swimmer-1920.jpg";
+import bgImageD from "../assets/homepage-background-swimmer-1920.avif";
 import bgImageM from "../assets/homepage-background-swimmer-m6.jpg";
+import bgImageT from "../assets/homepage-background-swimmer-t3.jpg";
 
 export default function Home() {
   return (
     <>
       <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
         <picture className="absolute inset-0 max-h-screen">
-          <source media="(max-width: 1280px)" srcSet={bgImageM} />
+          <source media="(max-width: 768px)" srcSet={bgImageM} />
+          <source
+            media="(min-width: 769px) and (max-width: 1280px)"
+            srcSet={bgImageT}
+          />
           <source media="(min-width: 1281px)" srcSet={bgImageD} />
           <img
             src={bgImageD}
