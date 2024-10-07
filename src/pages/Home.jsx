@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
 import bgImageD from "../assets/homepage-background-swimmer-1920.jpg";
 import bgImageM from "../assets/homepage-background-swimmer-m6.jpg";
-import bgImageT from "../assets/homepage-background-swimmer-t.jpg";
-import bgImage from "../assets/homepage-background-swimmer.jpg";
+import bgImageT from "../assets/homepage-background-swimmer-t1.png";
 
 export default function Home() {
   return (
     <>
       <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
         <picture className="absolute inset-0 max-h-screen">
-          <source media="(min-width: 1024px)" srcSet={bgImageD} />
-          <source media="(min-width: 768px)" srcSet={bgImageT} />
           <source media="(max-width: 767px)" srcSet={bgImageM} />
+          <source media="(min-width: 768px)" srcSet={bgImageT} />
+          <source media="(min-width: 1440px)" srcSet={bgImageD} />
+
           <img
-            src={bgImage}
+            src={bgImageD}
             alt="Swimming background"
             className="w-full h-full object-cover"
+            width={1920}
+            height={1440}
           />
         </picture>
         <div className="relative z-10 flex flex-col text-white w-full px-3 lg:w-full mx-auto gap-8 ml-1 sm:ml-10 md:ml-20">
