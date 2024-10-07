@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import bgImageD from "../assets/homepage-background-swimmer-d.jpg";
-import bgImageM from "../assets/homepage-background-swimmer-m4.jpg";
+import bgImageD from "../assets/homepage-background-swimmer-1920.jpg";
+import bgImageM from "../assets/homepage-background-swimmer-m6.jpg";
 import bgImageT from "../assets/homepage-background-swimmer-t.jpg";
 import bgImage from "../assets/homepage-background-swimmer.jpg";
 

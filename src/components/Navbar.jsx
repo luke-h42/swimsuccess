@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="py-2 flex items-center justify-between container mx-auto px-6  ">
           <div className="w-24 h-8">
             <Link to="/" className="cursor-pointer " onClick={closeNav}>
-              <img src={swim_success_logo}></img>
+              <img className="w-24 h-8" src={swim_success_logo}></img>
             </Link>
           </div>
           <div className="flex justify-center">
