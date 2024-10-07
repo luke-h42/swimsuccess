@@ -39,7 +39,7 @@ export default function Navbar() {
               <img src={swim_success_logo}></img>
             </Link>
           </div>
-          <div className="flex justify-center" onClick={toggleNav} ref={navRef}>
+          <div className="flex justify-center" ref={navRef}>
             <button className="w-10 h-10">
               <svg
                 className="w-full h-full text-white md:hidden"
@@ -50,20 +50,29 @@ export default function Navbar() {
                 fill="none"
                 viewBox="0 0 24 24"
               >
+                <rect
+                  className="w-full h-full"
+                  x={0}
+                  y={0}
+                  fill="transparent"
+                  onClick={toggleNav}
+                />
                 <path
-                  className={`${navOpen ? "hidden" : ""}`}
+                  className={`${navOpen ? "opacity-0" : ""}`}
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeWidth="2"
                   d="M5 7h14M5 12h14M5 17h14"
+                  onClick={toggleNav}
                 />
                 <path
-                  className={` navbar-openable ${!navOpen ? "hidden" : ""}`}
+                  className={` navbar-openable ${!navOpen ? "opacity-0" : ""}`}
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M6 18 17.94 6M18 18 6.06 6"
+                  onClick={closeNav}
                 />
               </svg>
             </button>
