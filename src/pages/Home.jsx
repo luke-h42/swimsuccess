@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
-        <picture className="absolute inset-0 ">
+        <picture className="absolute inset-0 max-h-screen">
           <source media="(min-width: 1024px)" srcSet={bgImageD} />
           <source media="(min-width: 768px)" srcSet={bgImageT} />
           <source media="(max-width: 767px)" srcSet={bgImageM} />
