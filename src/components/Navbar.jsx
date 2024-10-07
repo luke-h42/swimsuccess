@@ -31,7 +31,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className=" bg-white sticky top-0 z-10 text-white h-14 md:flex">
+    <nav
+      className=" bg-white sticky top-0 z-10 text-white h-14 md:flex"
+      ref={navRef}
+    >
       <div className="md:flex bg-primary md:justify-between md:w-full md:px-8 lg:px-16">
         <div className="py-2 flex items-center justify-between container mx-auto px-6  ">
           <div className="w-24">
@@ -39,41 +42,39 @@ export default function Navbar() {
               <img src={swim_success_logo}></img>
             </Link>
           </div>
-          <div className="flex justify-center" ref={navRef}>
-            <button className="w-10 h-10">
+          <div className="flex justify-center">
+            <button
+              className="block w-10 h-10 "
+              type="button"
+              onClick={toggleNav}
+            >
               <svg
                 className="w-full h-full text-white md:hidden"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="none"
+                fill="current"
                 viewBox="0 0 24 24"
               >
-                <rect
-                  className="w-full h-full"
-                  x={0}
-                  y={0}
-                  fill="transparent"
-                  onClick={toggleNav}
-                />
-                <path
-                  className={`${navOpen ? "opacity-0" : ""}`}
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  d="M5 7h14M5 12h14M5 17h14"
-                  onClick={toggleNav}
-                />
-                <path
-                  className={` navbar-openable ${!navOpen ? "opacity-0" : ""}`}
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18 17.94 6M18 18 6.06 6"
-                  onClick={closeNav}
-                />
+                {!navOpen ? (
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeWidth="2"
+                    d="M5 7h14M5 12h14M5 17h14"
+                  />
+                ) : (
+                  <path
+                    className="navbar-openable"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    fill="transparent"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                )}
               </svg>
             </button>
           </div>
