@@ -7,6 +7,12 @@ export default {
   theme: {
     fontFamily: {sans: ["Open Sans", "sans-serif"]},
     extend: {
+      backgroundImage: {
+        mobile: "url('/src/assets/homepage-background-swimmer-m.jpg')",
+        desktop: "url('/src/assets/homepage-background-swimmer-d.jpg')",
+        tablet: "url('/src/assets/homepage-background-swimmer-t.jpg')",
+        fallback: "url('/src/assets/homepage-background-swimmer-m.jpg')",
+      },
        colors: {
         primary: '#017DAB',
         primary100: '#D5F3FF',

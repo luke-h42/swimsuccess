@@ -64,6 +64,7 @@ export default function Coaching() {
               <div>
                 <img
                   className="w-80 h-80"
+                  decoding="async"
                   loading="lazy"
                   src={coach.image}
                 ></img>

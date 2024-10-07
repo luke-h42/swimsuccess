@@ -217,6 +217,7 @@ export default function Plans() {
                   <img
                     className="w-full h-64"
                     loading="lazy"
+                    decoding="async"
                     src={plan.image}
                   ></img>
                 </div>
