@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
         <picture className="absolute inset-0 max-h-screen">
-          <source media="(max-width: 767px)" srcSet={bgImageM} />
-          <source media="(min-width: 768px)" srcSet={bgImageD} />
+          <source media="(max-width: 1280px)" srcSet={bgImageM} />
+          <source media="(min-width: 1281px)" srcSet={bgImageD} />
           <img
             src={bgImageD}
             alt="Swimming background"
