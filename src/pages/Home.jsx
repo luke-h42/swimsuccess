@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import bgImageD from "../assets/homepage-background-swimmer-1920.jpg";
 import bgImageM from "../assets/homepage-background-swimmer-m6.jpg";
-import bgImageT from "../assets/homepage-background-swimmer-t1.png";
 
 export default function Home() {
   return (
@@ -9,9 +8,7 @@ export default function Home() {
       <section className="relative flex items-center min-h-[calc(100vh-56px)] w-full overflow-hidden">
         <picture className="absolute inset-0 max-h-screen">
           <source media="(max-width: 767px)" srcSet={bgImageM} />
-          <source media="(min-width: 768px)" srcSet={bgImageT} />
-          <source media="(min-width: 1440px)" srcSet={bgImageD} />
-
+          <source media="(min-width: 768px)" srcSet={bgImageD} />
           <img
             src={bgImageD}
             alt="Swimming background"
